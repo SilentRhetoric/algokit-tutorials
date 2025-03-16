@@ -1,22 +1,26 @@
 ---
 type: lesson
-title: Welcome to TutorialKit
+title: Welcome to Algorand
 focus: /counter.js
 ---
 
-# Welcome to TutorialKit
+# Welcome
 
-Hey there, and welcome to TutorialKit 👋!
+Hey there, and welcome to Algorand 👋!
 
-To kick things off, we have prepared a small demo lesson for you, where we'll dive into the concept of event handling in JavaScript. Our task is to resuscitate a lifeless counter app by introducing the crucial element of interactivity: **event listeners**.
+This is a self-guided tutorial that will introduce you to some of the basic building blocks of blockchain and how they work on the Algorand blockchain network.
 
-Let's look at the preview on the right for a moment and try to click on the button that says `counter is 0`. We'll notice that it doesn't work.
+At each step along the way, you'll read a short explanation of an Algorand primitive concept and explore it using code to interact with real examples taken straight from the MainNet public network. 
 
-In the code for `counter.js`, which you can find on the right, we have a `setupCounter` function responsible for initializing our counter app. However, a crucial component is missing: an event listener for the button.
+After reading the instructions, use the editor at top right to complete the code to perform the task and see the result displayed in the small app rendered at bottom right.
 
-Event listeners are essential in web development as they enable our applications to respond to user actions. In this case, we need to listen for clicks on the button to increment the counter.
+If you get stuck trying to get the code right, you can use the Solve button to show the correct code to run the app and complete the exploration.
 
-To address this, we'll call the `addEventListener` to attach a `click` event listener to the button element. When a click is detected, we'll execute a callback function that increments the counter and updates the `innerHTML` accordingly.
+Throughout the tutorial, you will use the AlgoKit Utils TypeScript library to interact with the Algorand network and its data structures. 
+
+This `algokit-utils-ts` package is one of the central code tools within AlgoKit, a comprehensive set of software tools for Algorand developers to build applications that can leverage Algorand's incredible capabilities as a distributed ledger.
+
+The primary class provided by Utils is the `AlgorandClient`, a stateful client that acts as a portal to a rich set of account, transaction, and data methods.
 
 ```ts add={9}
 export function setupCounter(element) {
@@ -33,6 +37,4 @@ export function setupCounter(element) {
 }
 ```
 
-This gives you a sneak peak of the TutorialKit experience, demonstrating what it's capable of.
-
-Happy writing!
+Enjoy the journey!
