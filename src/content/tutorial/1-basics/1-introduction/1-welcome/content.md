@@ -1,7 +1,7 @@
 ---
 type: lesson
 title: Welcome to Algorand
-focus: /counter.js
+focus: /src/App.tsx
 ---
 
 # Welcome

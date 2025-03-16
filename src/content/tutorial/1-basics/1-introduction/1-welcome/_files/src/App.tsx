@@ -1,4 +1,5 @@
-import algokitLogo from '/logo.svg'
+import algokitLogo from './assets/logo.svg'
+import './App.css'
 import DataFetcher from './DisplayData'
 
 function App() {
@@ -6,18 +7,18 @@ function App() {
     <>
       <div>
         <a href="https://algorand.co/algokit" target="_blank">
-          <img src={algokitLogo} alt="AlgoKit logo" />
+          <img src={algokitLogo} className="logo" alt="AlgoKit logo" />
         </a>
       </div>
-      <p className="text-xl">Vite + React</p>
+      <h1>Vite + React</h1>
       <DataFetcher/>
-      <div>
+      <div className="card">
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p>
-        Click the AlgoKit logo to read our docs!
+      <p className="read-the-docs">
+        Click the AlgoKit logo to read our docs
       </p>
     </>
   )
