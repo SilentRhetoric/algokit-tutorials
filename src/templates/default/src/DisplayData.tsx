@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const DataFetcher = () => {
   const [data, setData] = useState(null);
@@ -9,14 +9,16 @@ const DataFetcher = () => {
     setLoading(true);
     setData(null);
     setError("");
-    
+
     try {
-      const response = await fetch('https://mainnet-api.4160.nodely.dev/v2/status');
-      
+      const response = await fetch(
+        "https://mainnet-api.4160.nodely.dev/v2/status",
+      );
+
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      
+
       const jsonData = await response.json();
       setData(jsonData);
     } catch (err) {
@@ -27,30 +29,26 @@ const DataFetcher = () => {
   };
 
   return (
-    <div className="">
-      <button
-        onClick={handleFetchData}
-        disabled={loading}
-        className="btn"
-      >
-        {loading ? 'Loading...' : 'Fetch Data'}
+    <div className="max-w-md">
+      <button onClick={handleFetchData} disabled={loading} className="btn">
+        {loading ? "Loading..." : "Fetch Chain Data"}
       </button>
-      
+
       <div className="">
         {loading && <p className="">Loading data...</p>}
-        
+
         {error && (
           <div className="">
             <p>{error}</p>
           </div>
         )}
-        
+
         {data && (
           <div className="">
             <h3 className="">Response Data:</h3>
-            <pre className="">
-              {JSON.stringify(data, null, 2)}
-            </pre>
+            <div className="overflow-scroll">
+              <pre className="text-sm">{JSON.stringify(data, null, 2)}</pre>
+            </div>
           </div>
         )}
       </div>

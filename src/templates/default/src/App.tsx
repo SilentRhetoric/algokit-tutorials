@@ -3,23 +3,18 @@ import DataFetcher from './DisplayData'
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col items-center p-8 space-y-4">
       <div>
-        <a href="https://algorand.co/algokit" target="_blank">
-          <img src={algokitLogo} alt="AlgoKit logo" />
+        <a href="https://developer.algorand.co" target="_blank">
+          <img src={algokitLogo} className="h-16" alt="AlgoKit logo" />
         </a>
       </div>
-      <p className="text-xl">Vite + React</p>
-      <DataFetcher/>
-      <div>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p>
-        Click the AlgoKit logo to read our docs!
+      <p className="text-4xl">AlgoKit Tutorial</p>
+      <p className="text-sm">
+        Click the AlgoKit logo to read our docs
       </p>
-    </>
+      <DataFetcher/>
+    </div>
   )
 }
 
