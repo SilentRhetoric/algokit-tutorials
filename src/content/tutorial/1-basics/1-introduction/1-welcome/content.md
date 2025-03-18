@@ -10,7 +10,7 @@ Hey there, and welcome to Algorand 👋!
 
 This is a self-guided tutorial that will introduce you to some of the basic building blocks of blockchain and how they work on the Algorand blockchain network.
 
-Each lesson will include short explanation of an Algorand concept and a task to explore it using code to interact with real examples from the MainNet public network.
+Each lesson will include a short explanation of an Algorand concept and a task to explore it using code to interact with real examples from the MainNet public network.
 
 After reading the instructions and reviewing the code preview, use the editor at top right to complete the code to perform the task. The app rendered at bottom right will update when you modify the code above.
 
@@ -28,7 +28,7 @@ The primary class provided by Utils is the `AlgorandClient`, a stateful client t
 
 Let's create a client and use it query MainNet for the latest round, or block number, at the tip of the chain:
 
-```ts add={7}
+```ts add=/.lastRound/
 import { AlgorandClient } from "@algorandfoundation/algokit-utils";
 
 const algorand = AlgorandClient.mainNet();
