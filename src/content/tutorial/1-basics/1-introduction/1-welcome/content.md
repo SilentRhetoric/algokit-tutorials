@@ -41,4 +41,4 @@ export async function getLastRound() {
 
 Here you can see that the AlgorandClient object has a method to access the `algod` client for making REST API calls to an Algorand node's Algod service to query current chain data.
 
-Fix the code at right to fetch the latest round number for MainNet!
+Fix the code at right so that clicking the button will fetch the latest round number on Algorand MainNet!

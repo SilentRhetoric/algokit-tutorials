@@ -22,19 +22,20 @@ const DataFetcher = () => {
   };
 
   return (
-    <div className="max-w-md flex flex-col gap-8">
+    <div className="max-w-md flex flex-col gap-8 text-center">
       <button
         onClick={handleFetchData}
         disabled={loading}
         className="btn m-auto"
       >
-        {loading ? "Loading..." : "Fetch Latest Round"}
+        Fetch Latest Round
       </button>
       <div className="flex">
         {loading && <p className="">Loading data...</p>}
         {error && <p>{`Error: ${error}`}</p>}
         {data && <div className="">{`Latest MainNet block: ${data}`}</div>}
       </div>
+      {data && <p>Success!</p>}
     </div>
   );
 };
