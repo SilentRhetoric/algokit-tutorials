@@ -1,5 +1,5 @@
 import algokitLogo from "/logo.svg";
-import DataFetcher from "./DisplayData";
+import DataFetcher from "./DataFetcher";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
           <img src={algokitLogo} className="h-16" alt="AlgoKit logo" />
         </a>
       </div>
-      <p className="">Use AlgoKit Utils TypeScript to explore chain concepts</p>
+      <p>Use AlgoKit Utils TypeScript to explore chain concepts</p>
       <DataFetcher />
     </div>
   );

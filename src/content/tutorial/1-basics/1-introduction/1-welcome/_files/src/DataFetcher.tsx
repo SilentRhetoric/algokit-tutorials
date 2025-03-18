@@ -31,9 +31,9 @@ const DataFetcher = () => {
         Fetch Latest Round
       </button>
       <div className="flex">
-        {loading && <p className="">Loading data...</p>}
+        {loading && <p>Loading data...</p>}
         {error && <p>{`Error: ${error}`}</p>}
-        {data && <div className="">{`Latest MainNet block: ${data}`}</div>}
+        {data && <div>{`Latest MainNet block: ${data}`}</div>}
       </div>
       {data && <p>Success!</p>}
     </div>

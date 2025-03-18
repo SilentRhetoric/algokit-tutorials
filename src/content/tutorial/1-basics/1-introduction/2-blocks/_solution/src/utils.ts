@@ -1,9 +1,3 @@
-/*
-This file is set up for the Welcome lesson.
-It gets overridden by the _files folder in each individual lesson,
-so there is no need to modify this file for subsequent lessons.
-*/
-
 import { AlgorandClient } from "@algorandfoundation/algokit-utils";
 
 const algorand = AlgorandClient.mainNet();
