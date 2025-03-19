@@ -37,7 +37,6 @@ const DataFetcher = () => {
         {error && <p>{`Error: ${error}`}</p>}
         {data && <JSONTreeView data={data} />}
       </div>
-      {data && <p>Success!</p>}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getBlock, getLastRound } from "./utils";
+import { getTransactionFromIndexer } from "./utils";
 import { JSONTreeView } from "./JSONTreeView";
 
 const DataFetcher = () => {
@@ -13,9 +13,11 @@ const DataFetcher = () => {
     setError("");
 
     try {
-      const lastRound = await getLastRound();
-      const block = await getBlock(lastRound);
-      setData(block);
+      const txID = "7MK6WLKFBPC323ATSEKNEKUTQZ23TCCM75SJNSFAHEM65GYJ5ANQ";
+      const txn = await getTransactionFromIndexer(txID);
+      const note = txn.transaction.note;
+      const message = new TextDecoder().decode(note);
+      setData(message);
     } catch (err) {
       console.error(`Error fetching data: `, err);
     } finally {
@@ -30,12 +32,12 @@ const DataFetcher = () => {
         disabled={loading}
         className="btn m-auto"
       >
-        Fetch Latest Block
+        Decode Transaction Note
       </button>
       <div className="flex overflow-scroll">
         {loading && <p>Loading data...</p>}
         {error && <p>{`Error: ${error}`}</p>}
-        {data && <JSONTreeView data={data} />}
+        {data && <p>{data}</p>}
       </div>
     </div>
   );

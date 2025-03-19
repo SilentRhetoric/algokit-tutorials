@@ -35,7 +35,6 @@ const DataFetcher = () => {
         {error && <p>{`Error: ${error}`}</p>}
         {data && <div>{`Latest MainNet block: ${data}`}</div>}
       </div>
-      {data && <p>Success!</p>}
     </div>
   );
 };

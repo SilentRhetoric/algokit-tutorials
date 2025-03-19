@@ -66,13 +66,13 @@ function TreeNode(props: TreeNodeProps) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1"
+              strokeWidth="1"
               stroke="currentColor"
               className="mr-2 size-4"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="m19.5 8.25-7.5 7.5-7.5-7.5"
               />
             </svg>
@@ -81,13 +81,13 @@ function TreeNode(props: TreeNodeProps) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1"
+              strokeWidth="1"
               stroke="currentColor"
               className="mr-2 size-4"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="m8.25 4.5 7.5 7.5-7.5 7.5"
               />
             </svg>
@@ -105,7 +105,7 @@ function TreeNode(props: TreeNodeProps) {
       {isExpanded && isExpandable() && (
         <div className="ml-2 border-l-[0.5px] pl-4">
           {Object.entries(props.value as JSONObject).map(([key, val]) => (
-            <TreeNode label={key} value={val} />
+            <TreeNode label={key} value={val} key={key} />
           ))}
         </div>
       )}
