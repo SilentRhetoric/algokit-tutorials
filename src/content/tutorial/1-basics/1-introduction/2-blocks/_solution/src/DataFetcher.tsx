@@ -2,10 +2,6 @@ import { useState } from "react";
 import { getBlock, getLastRound } from "./utils";
 import { JSONTreeView } from "./JSONTreeView";
 
-function bigintReplacer(key: string, value: any): any {
-  return typeof value === "bigint" ? value.toString() : value;
-}
-
 const DataFetcher = () => {
   const [data, setData] = useState<any>();
   const [loading, setLoading] = useState(false);
@@ -34,7 +30,7 @@ const DataFetcher = () => {
         disabled={loading}
         className="btn m-auto"
       >
-        Fetch Latest Round
+        Fetch Latest Block
       </button>
       <div className="flex overflow-scroll">
         {loading && <p>Loading data...</p>}

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { getBlock, getLastRound } from "./utils";
-import { JSONTreeView } from "./JSONTreeView"; // @ts-ignore
+import { getBlockFromIndexer } from "./utils";
+import { JSONTreeView } from "./JSONTreeView";
 
 const DataFetcher = () => {
   const [data, setData] = useState<any>();
@@ -13,8 +13,7 @@ const DataFetcher = () => {
     setError("");
 
     try {
-      const lastRound = await getLastRound();
-      const block = await getBlock(lastRound);
+      const block = await getBlockFromIndexer(62440n);
       setData(block);
     } catch (err) {
       console.error(`Error fetching data: `, err);
@@ -30,7 +29,7 @@ const DataFetcher = () => {
         disabled={loading}
         className="btn m-auto"
       >
-        Fetch Latest Block
+        Fetch Block 62440
       </button>
       <div className="flex overflow-scroll">
         {loading && <p>Loading data...</p>}

@@ -1,10 +1,10 @@
 ---
 type: lesson
-title: Network Status
+title: Transaction Blocks
 focus: /src/utils.ts
 ---
 
-# Blocks
+# Transaction Blocks
 
 In the previous lesson, we fetched the network status and looked at the `lastRound` property to get the block number of the tip of the chain. Now, let's see what's in the most recent block on the chain in terms of transactions.
 
