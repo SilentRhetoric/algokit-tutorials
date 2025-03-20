@@ -17,9 +17,9 @@ Accounts on Algorand also play a pivotal role in the network's Pure Proof of Sta
 Use the `AlgorandClient` to fetch an account from the ledger and see what data it is holding:
 
 ```ts add={2,3}
-export async function getTransactionFromIndexer(txID: string) {
-  const txn = await algorand.client.indexer.lookupTransactionByID(txID).do();
-  return txn;
+export async function getAccount(addr: string) {
+  const acct = await algorand.account.getInformation(addr);
+  return acct;
 }
 ```
 
