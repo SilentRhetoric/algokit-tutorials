@@ -8,7 +8,7 @@ focus: /src/utils.ts
 
 The block from Lesson 3 contained just a single transaction, an Algo payment transaction. This is the simplest type of transaction on Algorand.
 
-Below is an example of a simple payment transaction that sends Algos from one account to another. It also includes a text note, which is Base64 encoded.
+Below is an example of a typical payment transaction that sends Algos from one account to another. It also includes a text note, which is Base64 encoded.
 
 ```json
 {
@@ -31,7 +31,9 @@ A full reference for transaction fields, their full names, types, and descriptio
 
 ## Task: Inspect a Payment Transaction
 
-Use the `AlgorandClient` to fetch an Algo payment transaction from the chain:
+Let's get a transaction from the Indexer to take a closer look at it.
+
+Use the `AlgorandClient` to fetch an old Algo payment transaction from the chain:
 
 ```ts add={2,3}
 export async function getTransactionFromIndexer(txID: string) {
@@ -40,6 +42,10 @@ export async function getTransactionFromIndexer(txID: string) {
 }
 ```
 
-Fix the code at right so that clicking the button will fetch the special transaction in the historical block from Lesson 3 and decode its note field.
+Fix the code at right so that clicking the button will fetch the special transaction in the historical block from Lesson 3 and decode its note field so that it is human-readable UTF-8 text.
 
 What do you notice about this transaction note?
+
+## Further Reading
+
+Learn more about Payment transactions and how to use them [here](http://dev.algorand.co/concepts/transactions/types#payment-transaction).

@@ -7,4 +7,6 @@ export async function getLastRound() {
   return status.lastRound;
 }
 
-export async function getBlock(round: bigint) {}
+export async function getBlock(round: bigint) {
+  // Insert code here
+}

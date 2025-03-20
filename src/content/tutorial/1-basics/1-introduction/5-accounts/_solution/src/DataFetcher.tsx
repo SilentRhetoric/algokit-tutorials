@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { getTransactionFromIndexer } from "./utils";
+import { JSONTreeView } from "./JSONTreeView";
+import { getAccount } from "./utils";
 
 const DataFetcher = () => {
   const [data, setData] = useState<any>();
@@ -12,11 +13,9 @@ const DataFetcher = () => {
     setError("");
 
     try {
-      const txID = "7MK6WLKFBPC323ATSEKNEKUTQZ23TCCM75SJNSFAHEM65GYJ5ANQ";
-      const txn = await getTransactionFromIndexer(txID);
-      const note = txn.transaction.note;
-      const message = new TextDecoder().decode(note);
-      setData(message);
+      const addr = "2UEQTE5QDNXPI7M3TU44G6SYKLFWLPQO7EBZM7K7MHMQQMFI4QJPLHQFHM";
+      const acct = await getAccount(addr);
+      setData(acct);
     } catch (err) {
       console.error(`Error fetching data: `, err);
     } finally {
@@ -31,12 +30,12 @@ const DataFetcher = () => {
         disabled={loading}
         className="btn m-auto"
       >
-        Decode Transaction Note
+        Fetch Account Info
       </button>
       <div className="flex overflow-scroll">
         {loading && <p>Loading data...</p>}
         {error && <p>{`Error: ${error}`}</p>}
-        {data && <p>{data}</p>}
+        {data && <JSONTreeView data={data} />}
       </div>
     </div>
   );

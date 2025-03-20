@@ -42,3 +42,7 @@ export async function getLastRound() {
 Here you can see that the AlgorandClient object has a method to access the `algod` client for making REST API calls to an Algorand node's Algod service to query current chain data.
 
 Fix the code at right so that clicking the button will fetch the latest round number on Algorand MainNet!
+
+## Further Reading
+
+Learn more about AlgoKit Utils TypeScript and how to use it in your apps [here](http://dev.algorand.co/algokit/utils/typescript/overview).

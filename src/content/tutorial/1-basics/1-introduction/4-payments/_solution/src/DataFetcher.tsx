@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { getTransactionFromIndexer } from "./utils";
-import { JSONTreeView } from "./JSONTreeView";
 
 const DataFetcher = () => {
   const [data, setData] = useState<any>();

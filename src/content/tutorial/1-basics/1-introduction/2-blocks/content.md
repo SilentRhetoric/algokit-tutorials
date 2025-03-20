@@ -26,3 +26,7 @@ export async function getBlock(round: bigint) {
 Fix the code at right so that clicking the button will fetch the latest block on Algorand MainNet. It will be visualized as an interactive tree.
 
 What do you notice about the block's contents? Is there anything that surprised you? Were you able to read all of the data?
+
+## Further Reading
+
+Learn more about Algorand blocks and the data they contain [here](http://dev.algorand.co/concepts/transactions/blocks).

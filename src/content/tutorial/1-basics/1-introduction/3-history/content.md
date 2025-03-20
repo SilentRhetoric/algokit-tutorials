@@ -26,3 +26,9 @@ export async function getBlockFromIndexer(round: bigint) {
 Fix the code at right so that clicking the button will fetch a special old block on Algorand MainNet. It will be visualized as an interactive tree.
 
 This is a very special block. What does it contain? Is there anything special about the transaction?
+
+## Further Reading
+
+Learn more about installing the Indexer[here](http://dev.algorand.co/nodes/installation/indexer-installation).
+
+Explore Indexer's REST endpoints [here](http://dev.algorand.co/reference/rest-api/overview#indexer-rest-endpoints).
