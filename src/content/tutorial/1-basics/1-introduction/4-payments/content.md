@@ -48,4 +48,6 @@ What do you notice about this transaction note?
 
 ## Further Reading
 
-Learn more about Payment transactions and how to use them [here](http://dev.algorand.co/concepts/transactions/types#payment-transaction).
+Use Lora the explorer to review this transaction at <a href="https://lora.algokit.io/mainnet/transaction/7MK6WLKFBPC323ATSEKNEKUTQZ23TCCM75SJNSFAHEM65GYJ5ANQ" target="_blank">lora.algokit.io/mainnet/transaction/7MK6...</a>.
+
+Learn more about Payment transactions and how to use them in the Developer Portal <a href="http://dev.algorand.co/concepts/transactions/types#payment-transaction" target="_blank">here</a>.

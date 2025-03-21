@@ -1,6 +1,6 @@
 ---
 type: lesson
-title: Welcome to Algorand
+title: Welcome
 focus: /src/utils.ts
 ---
 
@@ -24,6 +24,10 @@ This `algokit-utils` package is one of the central code tools within AlgoKit, a 
 
 The primary class provided by Utils is the `AlgorandClient`, a stateful client that acts as a portal to a rich set of account, transaction, and data methods.
 
+## Lora the Explorer
+
+Each lesson in the tutorial will also invite you to use Lora, AlgoKit's Live On-Chain Resource Analyzer, to explorer the objects of the lesson through it's sophisticated explorer pages and visualizations.
+
 ## Your First Task: Get the Latest Round
 
 Let's create a client and use it query MainNet for the latest round, or block number, at the tip of the chain:
@@ -45,4 +49,6 @@ Fix the code at right so that clicking the button will fetch the latest round nu
 
 ## Further Reading
 
-Learn more about AlgoKit Utils TypeScript and how to use it in your apps [here](http://dev.algorand.co/algokit/utils/typescript/overview).
+Use Lora the explorer to watch as blocks are added to Algorand Mainnet at <a href="https://lora.algokit.io/mainnet" target="_blank">lora.algokit.io</a>.
+
+Learn more about AlgoKit Utils TypeScript and how to use it in your apps in the Developer Portal <a href="http://dev.algorand.co/algokit/utils/typescript/overview" target="_blank">here</a>.

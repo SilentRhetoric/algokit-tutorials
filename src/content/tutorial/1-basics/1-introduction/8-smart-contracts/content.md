@@ -43,4 +43,6 @@ Does the smart contract resemble the code above? What properties does this smart
 
 ## Further Reading
 
-You can learn more about how Algorand smart contracts work [here](http://dev.algorand.co/concepts/smart-contracts/overview).
+Use Lora the explorer to investigate this asset transfer at <a href="https://lora.algokit.io/mainnet/application/2853581955" target="_blank">lora.algokit.io/mainnet/application/2853581955</a>.
+
+You can learn more about how Algorand smart contracts work in the Developer Portal <a href="http://dev.algorand.co/concepts/smart-contracts/overview" target="_blank">here</a>.

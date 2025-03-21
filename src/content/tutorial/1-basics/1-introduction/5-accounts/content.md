@@ -10,7 +10,7 @@ In the last lesson we explored the first transaction on Algorand, an Algo paymen
 
 Algorand accounts are the main objects that are stored on the ledger, but there are others, too. Accounts are special, though, because they represent entities that can transact, hold and create assets, and create and interact with smart contracts.
 
-Accounts on Algorand also play a pivotal role in the network's Pure Proof of Stake (PPoS) consensus protocol. The Algo balance of accounts serves as the stake that votes to approve blocks to be added to the chain. A more in-depth discussion of Algorand's consensus protocol can be found [here](http://dev.algorand.co/protocol/overview).
+Accounts on Algorand also play a pivotal role in the network's Pure Proof of Stake (PPoS) consensus protocol. The Algo balance of accounts serves as the stake that votes to approve blocks to be added to the chain. A more in-depth discussion of Algorand's consensus protocol can be found <a href="http://dev.algorand.co/protocol/overview" target="_blank">here</a>.
 
 ## Task: Inspect an Account
 
@@ -29,4 +29,6 @@ Do you know why this account is notable?
 
 ## Further Reading
 
-You can learn more about how Algorand accounts work [here](http://dev.algorand.co/concepts/accounts/overview).
+Use Lora the explorer to investigate this account at <a href="https://lora.algokit.io/mainnet/account/2UEQTE5QDNXPI7M3TU44G6SYKLFWLPQO7EBZM7K7MHMQQMFI4QJPLHQFHM" target="_blank">lora.algokit.io/mainnet/account/2UEQ...</a>
+
+You can learn more about how Algorand accounts work in the Developer Portal <a href="http://dev.algorand.co/concepts/accounts/overview" target="_blank">here</a>.

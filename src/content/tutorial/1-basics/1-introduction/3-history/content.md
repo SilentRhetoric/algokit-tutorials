@@ -29,6 +29,8 @@ This is a very special block because Block 62440 was the first time someone tran
 
 ## Further Reading
 
-Learn more about installing the Indexer[here](http://dev.algorand.co/nodes/installation/indexer-installation).
+Use Lora the explorer to search for an old MainNet block at <a href="https://lora.algokit.io/mainnet" target="_blank">lora.algokit.io</a>.
 
-Explore Indexer's REST endpoints [here](http://dev.algorand.co/reference/rest-api/overview#indexer-rest-endpoints).
+Learn more about installing the Indexer in the Developer Portal <a href="http://dev.algorand.co/nodes/installation/indexer-installation" target="_blank">here</a>.
+
+Explore Indexer's REST endpoints in the Developer Portal <a href="http://dev.algorand.co/reference/rest-api/overview#indexer-rest-endpoints" target="_blank">here</a>.

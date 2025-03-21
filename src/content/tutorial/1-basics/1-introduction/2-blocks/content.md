@@ -29,4 +29,6 @@ What do you notice about the block's contents? Is there anything that surprised 
 
 ## Further Reading
 
-Learn more about Algorand blocks and the data they contain [here](http://dev.algorand.co/concepts/transactions/blocks).
+Use Lora the explorer to drill into a recent MainNet block to see its contents at <a href="https://lora.algokit.io/mainnet" target="_blank">lora.algokit.io</a>.
+
+Learn more about Algorand blocks and the data they contain in the Developer Portal <a href="http://dev.algorand.co/concepts/transactions/blocks" target="_blank">here</a>.

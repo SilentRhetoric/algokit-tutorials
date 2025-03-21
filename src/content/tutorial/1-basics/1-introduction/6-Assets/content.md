@@ -29,4 +29,6 @@ Do you notice anything interesting about how this asset is configured?
 
 ## Further Reading
 
-You can learn more about how Algorand Standard Assets work [here](http://dev.algorand.co/concepts/assets/overview).
+Use Lora the explorer to investigate this asset at <a href="https://lora.algokit.io/mainnet/asset/31566704" target="_blank">lora.algokit.io/mainnet/asset/31566704</a>.
+
+You can learn more about how Algorand Standard Assets work in the Developer Portal <a href="http://dev.algorand.co/concepts/assets/overview" target="_blank">here</a>.

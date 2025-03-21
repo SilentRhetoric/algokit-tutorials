@@ -33,4 +33,6 @@ How much did it cost to send this eight-figure value transfer as an asset transf
 
 ## Further Reading
 
-You can learn more about how Algorand Standard Asset transfers work [here](http://dev.algorand.co/concepts/transactions/types#asset-transfer-transaction).
+Use Lora the explorer to investigate this asset transfer at <a href="https://lora.algokit.io/mainnet/transaction/KUZ5F72S2FR7YTC4TFNTKOCSPD6YAWKOFOKPOSRJS7I6HVJMKZUA" target="_blank">lora.algokit.io/mainnet/transaction/KUZ5...</a>.
+
+You can learn more about how Algorand Standard Asset transfers work in the Developer Portal <a href="http://dev.algorand.co/concepts/transactions/types#asset-transfer-transaction" target="_blank">here</a>.
