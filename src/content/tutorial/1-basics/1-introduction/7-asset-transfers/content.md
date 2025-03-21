@@ -21,9 +21,9 @@ This is another unique feature on Algorand that provides users the benefit of ch
 Use the `AlgorandClient` to fetch a significant asset transfer transaction from the indexer and see its properties:
 
 ```ts add={2,3}
-export async function getAsset(id: bigint) {
-  const asset = await algorand.asset.getById(id);
-  return asset;
+export async function getAssetTransfer(id: string) {
+  const axfer = await algorand.client.indexer.lookupTransactionByID(id).do();
+  return axfer;
 }
 ```
 
