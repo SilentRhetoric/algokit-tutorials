@@ -1,4 +1,4 @@
-import algokitLogo from "/logo.svg";
+import algokitLogo from "/ak-logo.svg";
 import DataFetcher from "./DataFetcher";
 
 function App() {
