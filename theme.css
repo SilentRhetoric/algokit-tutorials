@@ -74,7 +74,7 @@
   --tk-background-primary: #001324;
   --tk-background-secondary: theme("colors.gray.900");
   --tk-background-active: theme("colors.gray.800");
-  --tk-background-active-secondary: theme("colors.gray.1000");
+  --tk-background-active-secondary: theme("colors.gray.900");
   --tk-background-brighter: theme("colors.gray.800");
   --tk-background-accent: theme("colors.accent.800");
   --tk-background-accent-secondary: theme("colors.accent.400");
