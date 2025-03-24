@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Color Tokens Light */
+:root {
+  --tk-background-primary: #f6f6f6;
+  --tk-text-primary: theme("colors.gray.800");
+}
+
+/* Color Tokens Dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tk-background-primary: #001324;
+    --tk-text-primary: theme("colors.gray.200");
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Aeonik", sans-serif;
+}

@@ -64,8 +64,8 @@
   /* Customization */
   --tk-elements-breadcrumbs-dropdown-lessonTextColorSelected: #ffffff;
   --tk-elements-breadcrumbs-dropdown-lessonBackgroundColorSelected: #2d2df1;
-  --tk-elements-fileTree-backgroundColor: #ffffff;
-  --tk-elements-editor-backgroundColor: #ffffff;
+  --tk-elements-fileTree-backgroundColor: #f6f6f6;
+  --tk-elements-editor-backgroundColor: #f6f6f6;
   /* --tk-elements-navCard-backgroundColor: #2d2df1; */
 }
 
@@ -134,8 +134,8 @@
   /* Customization */
   --tk-elements-breadcrumbs-dropdown-lessonTextColorSelected: #001324;
   --tk-elements-breadcrumbs-dropdown-lessonBackgroundColorSelected: #17cac6;
-  --tk-elements-fileTree-backgroundColor: #1f1e2e;
-  --tk-elements-editor-backgroundColor: #1f1e2e;
+  --tk-elements-fileTree-backgroundColor: #001324;
+  --tk-elements-editor-backgroundColor: #001324;
   --code-background-color: #192a39;
   /* --tk-elements-navCard-backgroundColor: #2d2df1; */
 }

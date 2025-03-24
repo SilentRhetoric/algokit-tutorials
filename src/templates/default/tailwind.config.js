@@ -6,6 +6,9 @@ export default {
       backgroundColor: {
         "tk-primary": "var(--tk-background-primary)",
       },
+      textColor: {
+        "tk-primary": "var(--tk-text-primary)",
+      },
       fontFamily: {
         sans: ["Inter", "Roboto", "sans-serif"],
         mono: ["Source Code Pro", "monospace"],
