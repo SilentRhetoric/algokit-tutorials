@@ -26,11 +26,11 @@ The primary class provided by Utils is the `AlgorandClient`, a stateful client t
 
 ## Lora the Explorer
 
-Each lesson in the tutorial will also invite you to use Lora, AlgoKit's Live On-Chain Resource Analyzer, to explorer the objects of the lesson through it's sophisticated explorer pages and visualizations.
+Each lesson in the tutorial will also invite you to use Lora, AlgoKit's Live On-Chain Resource Analyzer, to explore the objects of the lesson through it's sophisticated explorer pages and visualizations.
 
 ## Your First Task: Get the Latest Round
 
-Let's create a client and use it query MainNet for the latest round, or block number, at the tip of the chain:
+Let's create a client and use it to query MainNet for the latest round, or block number, at the tip of the chain:
 
 ```ts add=/.lastRound/
 import { AlgorandClient } from "@algorandfoundation/algokit-utils";
